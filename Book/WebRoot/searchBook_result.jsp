@@ -1,10 +1,10 @@
-<%@ page contentType="text/html;charset=gb2312" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
 <html>
 <head>
-		<title>ÍøÉÏÊéµê</title>
+		<title>ç½‘ä¸Šä¹¦åº—</title>
 		<link href="css/bookstore.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -23,23 +23,23 @@
 					<s:if test="#books.size!=0">
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<font color="blue"><h3>ËùÓĞ·ûºÏÌõ¼şµÄÍ¼Êé</h3></font><br>
+						<font color="blue"><h3>æ‰€æœ‰ç¬¦åˆæ¡ä»¶çš„å›¾ä¹¦</h3></font><br>
 						<s:iterator value="#books" id="book">
 							<table width="600" border="0">
 								<tr>
 									<td width="200" align="center">
-					<img src="/BookStroeWeb/picture/<s:property value="#book.picture"/>" width="100">
+					<img src="picture/<s:property value="#book.picture"/>" width="100">
 									</td>
 									<td valign="top" width="400">
 										<table>
 											<tr>
 												<td>
-										ÊéÃû:<s:property value="#book.bookname"/><br>
+										ä¹¦å:<s:property value="#book.bookname"/><br>
 												</td>
 											</tr>
 											<tr>
 												<td>
-												¼Û¸ñ:<s:property value="#book.price"/>Ôª
+												ä»·æ ¼:<s:property value="#book.price"/>å…ƒ
 													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -52,7 +52,7 @@
 						</s:iterator>
 					</s:if>
 					<s:else>
-						¶Ô²»Æğ£¬Ã»ÓĞºÏÊÊµÄÍ¼Êé£¡
+						å¯¹ä¸èµ·ï¼Œæ²¡æœ‰åˆé€‚çš„å›¾ä¹¦ï¼
 					</s:else>
 				</div>
 			</div>

@@ -1,10 +1,10 @@
-<%@ page contentType="text/html;charset=gb2312" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
 <html>
 <head>
-		<title>ÍøÉÏ¹ºÊéÏµÍ³</title>
+		<title>ç½‘ä¸Šè´­ä¹¦ç³»ç»Ÿ</title>
 		<link href="css/bookstore.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -23,14 +23,14 @@
 					<s:if test="#items.size != 0">
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<font color="blue"><h3>Äú¹ºÎï³µÖĞÍ¼Êé</h3></font><br/>
+						<font color="blue"><h3>æ‚¨è´­ç‰©è½¦ä¸­å›¾ä¹¦</h3></font><br/>
 			<table id="tb" cellSpacing="2" cellPadding="5" width="95%" align="center" border="0">
 				<tr>
-				<td bgcolor="rgb(238,238,238)" align="center" width="50%" height="12">Êé Ãû</td>
-				<td bgcolor="rgb(238,238,238)" align="center" width="15%" >¶¨ ¼Û</td>
-				<td bgcolor="rgb(238,238,238)" align="center" width="15%">Êı Á¿</td>
+				<td bgcolor="rgb(238,238,238)" align="center" width="50%" height="12">ä¹¦ å</td>
+				<td bgcolor="rgb(238,238,238)" align="center" width="15%" >å®š ä»·</td>
+				<td bgcolor="rgb(238,238,238)" align="center" width="15%">æ•° é‡</td>
 				<td bgcolor="rgb(238,238,238)" align="center" width="20%">
-										<font color="gray">²Ù ×÷</font>
+										<font color="gray">æ“ ä½œ</font>
 									</td>
 								</tr>
 							<form action="updateCart.action" method="post">
@@ -47,7 +47,7 @@
 <input type="hidden" name="bookid" value="<s:property value="value.book.bookid"/>"/>
 										</td>
 										<td>
-											<input type="submit" value="¸üĞÂ"/>
+											<input type="submit" value="æ›´æ–°"/>
 										</td>
 									</tr>
 								</s:iterator>
@@ -67,11 +67,11 @@
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			Ïû·Ñ½ğ¶î:<s:property value="#session.cart.totalPrice"/>Ôª&nbsp;&nbsp;&nbsp;
-						<a href="checkout.action"><img src="/BookStroeWeb/picture/count.gif"/></a>
+			æ¶ˆè´¹é‡‘é¢:<s:property value="#session.cart.totalPrice"/>å…ƒ&nbsp;&nbsp;&nbsp;
+						<a href="checkout.action"><img src="picture/count.gif"/></a>
 					</s:if>
 					<s:else>
-						¶Ô²»Æğ£¬Äú»¹Ã»ÓĞÑ¡¹ºÍ¼Êé£¡
+						å¯¹ä¸èµ·ï¼Œæ‚¨è¿˜æ²¡æœ‰é€‰è´­å›¾ä¹¦ï¼
 					</s:else>
 				</div>
 			</div>

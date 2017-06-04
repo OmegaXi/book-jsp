@@ -1,10 +1,10 @@
-<%@ page language="java" pageEncoding="gb2312"%>
+<%@ page language="java" pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
 <html>
 <head>
-	<title>网上购书系统</title>
+	<title>缃戜笂璐功绯荤粺</title>
 	<link href="css/bookstore.css" rel="stylesheet" type="text/css">
 </head>
 <body>	
@@ -17,11 +17,11 @@
 		</div>
 		<div class="right">
 			<div class="right_box">
-				<font face="宋体"></font><font face="宋体"></font><font face="宋体"></font><font face="宋体"></font>
+				<font face="瀹嬩綋"></font><font face="瀹嬩綋"></font><font face="瀹嬩綋"></font><font face="瀹嬩綋"></font>
 				<div class="banner"></div>
 				<div class="info_bk1">
 					<div align="center">
-						<s:property value="user.username"/>，欢迎登录！
+						<s:property value="user.username"/>锛屾杩庣櫥褰曪紒
 					</div>
 				</div>
 			</div>

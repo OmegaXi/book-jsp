@@ -1,49 +1,48 @@
-<%@ page contentType="text/html;charset=gb2312"%>
+<%@ page contentType="text/html;charset=UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
 <html>
 <head>
-<title>ÍøÉÏÊéµê</title>
+<title>ç½‘ä¸Šä¹¦åº—</title>
 <link href="css/bookstore.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 	<div class="head">
 		<div class="head_left">
-			<a href="#"> <img hspace="11" src="/BookStroeWeb/picture/logo_dear.gif"
-				vspace="5"> </a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ÊéµêÌá¹©×¨Òµ·şÎñ
-		</div>
+			<a href="#"> <img hspace="11" src="picture/logo_dear.gif"
+				vspace="5"> </a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ç½‘ä¸Šè´­ç‰©</div>
 		<div class="head_right">
 			<div class="head_right_nei">
 				<div class="head_top">
 					<div class="head_buy">
 						<strong> <a href="/BookStroeWeb/showCart.jsp"> <img
-								height="15" src="/BookStroeWeb/picture/buy01.jpg" width="16"> &nbsp;¹ºÎï³µ
-						</a> </strong> | <a href="#">ÓÃ»§FAQ</a>
+								height="15" src="picture/buy01.jpg" width="16"> &nbsp;è´­ç‰©è½¦
+						</a> </strong> | <a href="#">ç”¨æˆ·FAQ</a>
 					</div>
 				</div>
 				<div class="head_middle">
-					<a class="title01" href="index.jsp"> <span>&nbsp;&nbsp;Ê×Ò³&nbsp;&nbsp;</span>
+					<a class="title01" href="index.jsp"> <span>&nbsp;&nbsp;é¦–é¡µ&nbsp;&nbsp;</span>
 					</a>
 					<s:if test="#session.user==null">
-						<a class="title01" href="login.jsp"> <span>&nbsp;&nbsp;µÇÂ¼&nbsp;&nbsp;</span>
+						<a class="title01" href="login.jsp"> <span>&nbsp;&nbsp;ç™»å½•&nbsp;&nbsp;</span>
 						</a>
 					</s:if>
 					<s:else>
-						<a class="title01" href="logout.action"> <span>&nbsp;&nbsp;×¢Ïú&nbsp;&nbsp;</span>
+						<a class="title01" href="logout.action"> <span>&nbsp;&nbsp;æ³¨é”€&nbsp;&nbsp;</span>
 						</a>
-						<a class="title01" href="rewrite.jsp"> <span>&nbsp;&nbsp;ĞŞ¸Ä¸öÈËĞÅÏ¢&nbsp;&nbsp;</span>
+						<a class="title01" href="rewrite.jsp"> <span>&nbsp;&nbsp;ä¿®æ”¹ä¸ªäººä¿¡æ¯&nbsp;&nbsp;</span>
 						</a>
 					</s:else>
-					<a class="title01" href="register.jsp"> <span>&nbsp;&nbsp;×¢²á&nbsp;&nbsp;</span>
-					</a> <a class="title01" href="#"> <span>&nbsp;ÁªÏµÎÒÃÇ&nbsp;&nbsp;&nbsp;</span>
-					</a> <a class="title01" href="#"> <span>&nbsp;ÍøÕ¾µØÍ¼&nbsp;&nbsp;&nbsp;</span>
+					<a class="title01" href="register.jsp"> <span>&nbsp;&nbsp;æ³¨å†Œ&nbsp;&nbsp;</span>
+					</a> <a class="title01" href="#"> <span>&nbsp;è”ç³»æˆ‘ä»¬&nbsp;&nbsp;&nbsp;</span>
+					</a> <a class="title01" href="#"> <span>&nbsp;ç½‘ç«™åœ°å›¾&nbsp;&nbsp;&nbsp;</span>
 					</a>
 				</div>
 				<div class="head_bottom">
 					<form action="searchBook.action" method="post">
 						<input type="text" name="bookname" size="50" align="middle" /> <input
-							type="image" name="submit" src="/BookStroeWeb/picture/search02.jpg" align="top"
+							type="image" name="submit" src="picture/search02.jpg" align="top"
 							style="width: 48px; height: 22px" />
 					</form>
 				</div>

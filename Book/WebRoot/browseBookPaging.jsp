@@ -1,10 +1,10 @@
-<%@ page contentType="text/html;charset=gb2312"%>
+<%@ page contentType="text/html;charset=UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
 <html>
 <head>
-<title>Õ¯…œ ÈµÍ</title>
+<title>ÁΩë‰∏ä‰π¶Â∫ó</title>
 <link href="css/bookstore.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -23,15 +23,15 @@
 					<table width="600" border="0">
 						<tr>
 							<td width="200" align="center"><img
-								src="/BookStroeWeb/picture/<s:property value="#book.picture "/>"
+								src="picture/<s:property value="#book.picture "/>"
 								width="100" /></td>
 							<td valign="top" width="400">
 								<table>
 									<tr>
-										<td> È√˚:<s:property value="#book.bookname" /><br></td>
+										<td>‰π¶Âêç:<s:property value="#book.bookname" /><br></td>
 									</tr>
 									<tr>
-										<td>º€∏Ò:<s:property value="#book.price" />‘™
+										<td>‰ª∑Ê†º:<s:property value="#book.price" />ÂÖÉ
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
@@ -40,10 +40,10 @@
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img
 											src="/BookStroeWeb/picture/buy.gif" />
 											<form action="addToCart.action" method="post">
-												 ˝¡ø: <input type="text" name="quantity" value="0" size="4" />
+												Êï∞Èáè: <input type="text" name="quantity" value="0" size="4" />
 												<input type="hidden" name="bookid"
 													value="<s:property value="#book.bookid"/>"> <input
-													type="image" name="submit" src="/BookStroeWeb/picture/buy.gif" />
+													type="image" name="submit" src="picture/buy.gif" />
 											</form></td>
 									</tr>
 								</table></td>
@@ -63,22 +63,22 @@
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<s:set name="pager" value="#request.pager" />
 				<s:if test="#pager.hasFirst">
-					<a href="browseBookPaging.action?currentPage=1"> ◊“≥</a>
+					<a href="browseBookPaging.action?currentPage=1">È¶ñÈ°µ</a>
 				</s:if>
 				<s:if test="#pager.hasPrevious">
 					<a
 						href="browseBookPaging.action?currentPage=<s:property value= "#pager.currentPage-1"/>">
-						…œ“ª“≥ </a>
+						‰∏ä‰∏ÄÈ°µ </a>
 				</s:if>
 				<s:if test="#pager.hasNext">
 					<a
 						href="browseBookPaging.action?currentPage=<s:property value= "#pager.currentPage+1"/>">
-						œ¬“ª“≥ </a>
+						‰∏ã‰∏ÄÈ°µ </a>
 				</s:if>
 				<s:if test="#pager.hasLast">
 					<a
 						href="browseBookPaging.action?currentPage=<s:property value= "#pager.totalPage"/>">
-						Œ≤“≥ </a>
+						Â∞æÈ°µ </a>
 				</s:if>
 				<br>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -92,11 +92,11 @@
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				&nbsp;&nbsp;&nbsp;&nbsp;
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				&nbsp;&nbsp;&nbsp;&nbsp; µ±«∞µ⁄
+				&nbsp;&nbsp;&nbsp;&nbsp; ÂΩìÂâçÁ¨¨
 				<s:property value="#pager.currentPage" />
-				“≥£¨◊‹π≤
+				È°µÔºåÊÄªÂÖ±
 				<s:property value="#pager.totalPage" />
-				“≥
+				È°µ
 			</div>
 		</div>
 	</div>

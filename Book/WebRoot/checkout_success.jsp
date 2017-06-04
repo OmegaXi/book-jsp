@@ -1,10 +1,10 @@
-<%@ page contentType="text/html;charset=gb2312" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
 <html>
 <head>
-		<title>ÍøÉÏÊéµê</title>
+		<title>ç½‘ä¸Šä¹¦åº—</title>
 		<link href="css/bookstore.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -19,14 +19,14 @@
 			</div>
 			<div class="right">
 				<div class="right_box">
-					<font face="ËÎÌå"></font><font face="ËÎÌå"></font><font face="ËÎÌå"></font><font face="ËÎÌå"></font>
+					<font face="å®‹ä½“"></font><font face="å®‹ä½“"></font><font face="å®‹ä½“"></font><font face="å®‹ä½“"></font>
 					<div class="info_bk1">
 						<div align="center">
-							<h3>¶©µ¥Ìí¼Ó³É¹¦£¡</h3>
-			<s:property value="#session.user.username"/>£¬ÄúµÄ¶©µ¥ÒÑ¾­ÏÂ´ï£¬¶©µ¥ºÅÎª
-			<s:property value="#request.order.orderid"/>£¬ÎÒÃÇ»áÔÚ3ÈÕÄÚ¼ÄËÍÍ¼Êé¸øÄú£¡
+							<h3>è®¢å•æ·»åŠ æˆåŠŸï¼</h3>
+			<s:property value="#session.user.username"/>ï¼Œæ‚¨çš„è®¢å•å·²ç»ä¸‹è¾¾ï¼Œè®¢å•å·ä¸º
+			<s:property value="#request.order.orderid"/>ï¼Œæˆ‘ä»¬ä¼šåœ¨3æ—¥å†…å¯„é€å›¾ä¹¦ç»™æ‚¨ï¼
 							<br><br>
-							<a href="logout.action">ÍË³öµÇÂ¼</a>
+							<a href="logout.action">é€€å‡ºç™»å½•</a>
 						</div>
 					</div>
 				</div>

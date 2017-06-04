@@ -1,10 +1,10 @@
-<%@ page language="java" pageEncoding="gb2312"%>
+<%@ page language="java" pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
 <html>
 <head>
-	<title>ÍøÉÏÊéµê</title>
+	<title>ç½‘ä¸Šä¹¦åº—</title>
 	<link href="css/bookstore.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -17,12 +17,12 @@
 		</div>
 		<div class="right">
 			<div class="right_box">
-				<font face="ËÎÌå"></font><font face="ËÎÌå"></font><font face="ËÎÌå"></font><font face="ËÎÌå"></font>
+				<font face="å®‹ä½“"></font><font face="å®‹ä½“"></font><font face="å®‹ä½“"></font><font face="å®‹ä½“"></font>
 				<div class="banner"></div>
 				<div class="info_bk1">
 					<div align="center">
-						ÄúºÃ£¡ÓÃ»§ <s:property value="user.username"/> »¶Ó­Äú×¢²á³É¹¦£¡
-						<a href="login.jsp">µÇÂ¼</a>
+						æ‚¨å¥½ï¼ç”¨æˆ· <s:property value="user.username"/> æ¬¢è¿Žæ‚¨æ³¨å†ŒæˆåŠŸï¼
+						<a href="login.jsp">ç™»å½•</a>
 					</div>
 				</div>
 			</div>

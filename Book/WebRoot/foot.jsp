@@ -1,9 +1,9 @@
-<%@ page contentType="text/html;charset=gb2312"%>
+<%@ page contentType="text/html;charset=UTF-8"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
 <html>
 <head>
-	<title>Õ¯…œ ÈµÍ</title>
+	<title>ÁΩë‰∏ä‰π¶Â∫ó</title>
 	<link href="css/bookstore.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>

@@ -1,10 +1,10 @@
-<%@ page contentType="text/html;charset=gb2312" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
 <html>
 <head>
-		<title>ÍøÉÏÊéµê</title>
+		<title>ç½‘ä¸Šä¹¦åº—</title>
 		<link href="css/bookstore.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -19,12 +19,12 @@
 			</div>
 			<div class="right">
 				<div class="right_box">
-					<font face="ËÎÌå">Í¼ÊéÌí¼Ó³É¹¦£¡</font>
+					<font face="å®‹ä½“">å›¾ä¹¦æ·»åŠ æˆåŠŸï¼</font>
 					<form action="browseBookPaging.action" method="post">
 						<input type="hidden" value="<s:property value="#session['catalogid']"/>">
-						<input type="image" name="submit" src="/BookStroeWeb/picture/continue.gif"/>
+						<input type="image" name="submit" src="picture/continue.gif"/>
 					</form>
-					<a href="#"><img src="/BookStroeWeb/picture/count.gif"/></a>
+					<a href="#"><img src="picture/count.gif"/></a>
 				</div>
 			</div>
 		</div>

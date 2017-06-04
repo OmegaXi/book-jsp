@@ -24,7 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-		<s:property value="user.username"/>，您好！欢迎光临叮当书店。
+		<s:property value="user.username"/>，Welcome！
 	</body>
 
 </html>
