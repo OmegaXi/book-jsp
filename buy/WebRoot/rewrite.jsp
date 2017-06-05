@@ -31,7 +31,7 @@
 		<div class="left">
 			<div class="list_box">
 				<div class="list_bk">
-					<s:action name="browseCatalog" executeResult="true" />
+					<s:action name="browseCatalog" namespace="/" executeResult="true"/>
 				</div>
 			</div>
 		</div>
@@ -44,7 +44,7 @@
 							<s:textfield id="name" name="user.username" size="20"
 								 label="用户名" />
 							<br>
-							<s:password name="user.password" size="21" label="密码" />
+							<s:password name="user.password" size="20" label="密码" />
 							<br>
 							<s:textfield name="user.sex" size="20" label="性别" />
 							<br>

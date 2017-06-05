@@ -10,7 +10,7 @@
 <body>
 		<ul class=point02>
 			<li>
-				<strong>图书分类</strong>
+				<strong>图书类别</strong>
 			</li>
 			<s:iterator value="#request['catalogs']" id="catalog">
 				<li>

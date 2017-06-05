@@ -12,7 +12,7 @@
 	<div class="content">
 		<div class="left">
 			<div class="list_box">
-				<div class="list_bk"></div>
+				<div class="list_bk"><s:action name="browseCatalog" namespace="/" executeResult="true"/></div>
 			</div>
 		</div>
 		<div class="right">

@@ -13,7 +13,7 @@
 		<div class="left">
 			<div class="list_box">
 				<div class="list_bk">
-					<s:action name="browseCatalog" executeResult="true"/>
+					<s:action name="browseCatalog" namespace="/" executeResult="true"/>
 				</div>
 			</div>
 		</div>
@@ -21,8 +21,7 @@
 			<div class="right_box">
 				<font face="宋体"></font><font face="宋体"></font><font face="宋体"></font><font face="宋体"></font>
 				<div class="banner">
-				<h1 align="center">Bookstore OL</h1>>
-				</div>
+				<h1 align="center">Bookstore OL</h1></div>
 				<div align="center">
 					<s:action name="newBook" executeResult="true"/>
 				</div>

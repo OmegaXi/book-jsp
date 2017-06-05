@@ -7,7 +7,6 @@
 
     <constant name="struts.enable.DynamicMethodInvocation" value="false" />
     <constant name="struts.devMode" value="false" />
-
     <package name="default" namespace="/" extends="struts-default">
            <action name="register" class="userAction" method="register">
 			<result name="success">/register_success.jsp</result>
@@ -24,16 +23,12 @@
 			<result name="success">/rewrite_success.jsp</result>
 			<result name="input">/rewrite.jsp</result>
 		</action>
-
-
 		<action name="browseCatalog" class="bookAction" method="browseCatalog">
 			<result name="success">/menu.jsp</result>
 		</action>
 		<action name="browseBook" class="bookAction" method="browseBook">
 			<result name="success">/browseBook.jsp</result>
 		</action>
-
-
 		<action name="browseBookPaging" class="bookAction" method="browseBookPaging">
 			<result name="success">/browseBookPaging.jsp</result>
 		</action>
@@ -51,9 +46,5 @@
 			<result name="success">/checkout_success.jsp</result>
 			<result name="error">/login.jsp</result>
 		</action>
-  
-        
     </package>
-
-   
 </struts>

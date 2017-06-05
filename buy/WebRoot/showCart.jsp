@@ -13,7 +13,7 @@
 			<div class="left">
 				<div class="list_box">
 					<div class="list_bk">
-						<s:action name="browseCatalog" executeResult="true"/>
+						<s:action name="browseCatalog" namespace="/" executeResult="true"/>
 					</div>
 				</div>
 			</div>
@@ -23,7 +23,10 @@
 					<s:if test="#items.size != 0">
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<font color="blue"><h3>您购物车中图书</h3></font><br/>
+						<font color="blue">
+						<h3>购物车中的图书</h3>
+						</font>
+						<br/>
 			<table id="tb" cellSpacing="2" cellPadding="5" width="95%" align="center" border="0">
 				<tr>
 				<td bgcolor="rgb(238,238,238)" align="center" width="50%" height="12">书 名</td>
