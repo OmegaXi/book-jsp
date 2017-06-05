@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+        "-//Apache Struts//XWork Validator 1.0.2//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+
+<validators>
+	<field name="username">
+        <field-validator type="requiredstring">
+            <message>用户名不能为空</message>
+        </field-validator>
+        <field-validator type="stringlength">
+            <param name="minLength">4</param>
+            <param name="maxlength">6</param>
+            <message>用户名长度不能少于4位</message>
+        </field-validator>
+	</field>
+
+	<field name="password">
+        <field-validator type="requiredstring">
+            <message>密码不能为空</message>
+        </field-validator>
+        <field-validator type="stringlength">
+            <param name="minLength">6</param>
+            <param name="maxlength">16</param>
+            <message>密码长度在6~16之间</message>
+        </field-validator>
+	</field>
+	
+	<field name="sex">
+        <field-validator type="requiredstring">
+            <message>性别不能为空</message>
+        </field-validator>
+        <field-validator type="stringlength">
+            <param name="minLength">2</param>
+            <param name="maxLength">2</param>
+            <message>性别长度为2</message>
+        </field-validator>
+	</field>
+	
+	
+	<field name="age">
+        <field-validator type="int">
+            <message>年龄不能为空</message>
+        </field-validator>
+        <field-validator type="int">
+            <param name="min">16</param>
+            <param name="max">120</param>
+            <message>年龄必须在16~120之间</message>
+        </field-validator>
+	</field>
+</validators>
