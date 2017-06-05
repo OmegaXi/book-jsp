@@ -20,10 +20,10 @@
 			<div class="right_box">
 				<div class="info_bk1">
 					<div align="center">
-						<s:form action="register.action" method="post" name="form1">
+						<s:form action="register.action" method="post" name="form1" validate="true">
 							用户注册<br>
 							<s:textfield id="name" name= "user.username" size= "20" label="用户名"/><br>
-							<s:password name= "user.password" size="21" label="密码"/><br>
+							<s:password name= "user.password" size="20" label="密码"/><br>
 							<s:textfield name= "user.sex" size="20" label="性别"/><br>
 							<s:textfield name= "user.age" size="20" label="年龄"/><br>
 							<s:submit value="注册"/>

@@ -56,7 +56,7 @@ public class ShoppingAction extends ActionSupport {
 		if (user == null || cart == null)
 			return ActionSupport.ERROR;
 		Orders order = new Orders();
-		order.setOrderdate((Timestamp) new Date());
+		order.setOrderdate((Timestamp) new Timestamp(new Date().getTime()));
 		order.setUser(user);
 		for (Iterator it = cart.getItems().values().iterator(); it.hasNext();) {
 			Orderitem orderitem = (Orderitem) it.next();

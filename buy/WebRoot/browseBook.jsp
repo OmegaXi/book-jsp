@@ -23,7 +23,7 @@
 						<table width="600" border="0">
 							<tr>
 								<td width="200" align="center">
-									<img src="picture/<s:property value="#book. picture "/>" width="100"/>
+									<img src="picture/<s:property value="#book. picture"/>" width="100"/>
 								</td>
 								<td valign="top" width="400">
 									<table>

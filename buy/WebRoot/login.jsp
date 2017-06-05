@@ -22,7 +22,7 @@
 				<div class="banner"></div>
 				<div class="info_bk1">
 					<div align="center">
-						<s:form action="login.action" method="post" name="login">
+						<s:form action="login.action" method="post" name="login" validate="true">
 							用户登录<br>
 							<s:textfield name="user.username" size="21" id= "username" label="用户名"/><br>
 							<s:password name="user.password" size="21" id="username" label="密码"/><br>
